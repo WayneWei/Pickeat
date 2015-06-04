@@ -1,0 +1,279 @@
+@import url("font-awesome.min.css");
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800");
+
+body{
+  text-align: center;
+  color: #555555;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12pt;
+    font-weight: 300;
+    line-height: 1.65em;
+    background: #000 url("../img/background/about.jpg") center center fixed no-repeat;
+  -moz-background-size: cover;
+  background-size: cover;
+}
+
+
+
+.navbar-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  margin-top: 20px;
+  margin-bottom: -90px;
+}
+
+.navbar {
+  overflow: visible;
+  margin-bottom: 20px;
+}
+
+.navbar-inverse{
+  opacity: 0.95;
+}
+
+#navbarCollapse{
+  margin-right: 2%;
+}
+
+.navbar .brand {
+  position: absolute;
+  top: 5;
+  background: url("../img/logo.png") no-repeat;
+  width: 130px;
+  height: 100%;
+  background-size: 100%;
+  text-indent: -9999px;
+  display: block;
+  margin: 0;
+  margin-top: 10px;
+  margin-left: 15px;
+  padding: 0;
+  position: absolute;
+  -webkit-transition: opacity 0.1s ease-out;
+  -moz-transition: opacity 0.1s ease-out;
+  -o-transition: opacity 0.1s ease-out;
+  transition: opacity 0.1s ease-out;
+}
+
+.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus {
+  color: #fff;
+  background-color: black;
+}
+
+.dropdown-menu,.dropdown-menu>li>a {
+  color: #9d9d9d;
+  background-color: #222222;
+}
+
+
+.dropdown-menu .divider {
+  background-color: #080808;
+}
+
+.input-group{
+  margin: 4% 0%;
+}
+
+#main{
+  padding: 5% 0%;
+  text-align: center;
+}
+
+#content{
+  text-align: center;
+}
+
+img{
+  width: auto;
+  height : auto;  
+  max-height: 100%;
+    max-width: 100%;
+    border: none; 
+}
+
+iframe{
+  width: 100%;
+  height : auto;  
+  max-height: 100%;
+    max-width: 100%;
+    border: none; 
+
+}
+
+
+/* Flip Card */
+.flip-container
+{
+    text-align: center;
+    -webkit-perspective:1000;
+    perspective:1000;
+}
+
+.flip-cards
+{
+    
+    width:24em;
+    height:24em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-cards:hover
+{
+    transform: rotateY( -180deg );
+    -webkit-transform: rotateY(-180deg);
+}
+
+.flip-cards div
+{
+    width:24em;
+    height:24em;
+    box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    position:absolute; 
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+}
+
+.flip-cards img{
+  -webkit-transition:0.5s ease-in-out;
+  width:24em;
+    height:24em;
+    border-radius: 10px;
+}
+
+.front-card
+{
+    z-index: 2; 
+}
+
+.reverse-card{
+    width:24em;
+    height:24em;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY( -180deg );
+    border-radius: 10px;
+    background: #fff;
+}
+
+.reverse-card h3{
+  padding: 0.8em 1.2em 0.4em 1.2em;
+  text-align: center;
+  color: #dbdbdb;
+}
+
+.reverse-card p{
+  
+  padding: 0.8em 1.2em 0.4em 1.2em;
+  font-size: 1em;
+  text-align: -webkit-left;
+  line-height: 1.6em;
+}
+span.view {
+  display: block;
+  text-align: center;
+  font-family: "SourceHanSans-Normal";
+  font-size: 0.8em;
+  line-height: 35px;
+  margin: 0 auto;
+  border: none; 
+  cursor: pointer; 
+  position: static;
+}
+.reverse-card .view {
+  width: 8em;
+  height: 3em;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.5);
+  font-family: 'Open Sans', sans-serif;
+  
+}
+.reverse-card .view:hover { 
+  color: #ed9dff;
+  background-color: #fff0ff; 
+}
+
+
+@media (max-width: 767px){
+  .flip-cards
+{
+    
+    width:18em;
+    height:18em;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+}
+
+.flip-cards div
+{
+    width:18em;
+    height:18em;
+    box-shadow: 5px 10px 10px -5px rgba(0,0,0,0.5);
+    border-radius: 10px;
+    position:absolute; 
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    
+}
+
+.flip-cards img{
+  -webkit-transition:0.5s ease-in-out;
+  width:100%;
+    height:100%;
+    border-radius: 10px;
+}
+
+.reverse-card{
+    width:18em;
+    height:18em;
+    -webkit-transform: rotateY(-180deg);
+    transform: rotateY( -180deg );
+    border-radius: 10px;
+}
+
+  .reverse-card h3{
+  font-size: 1.2em;
+    }
+
+  .table>thead>tr>th, .table>tbody>tr>th, .table>tfoot>tr>th, .table>thead>tr>td, .table>tbody>tr>td, .table>tfoot>tr>td{
+    font-size: 0.5em;
+  }
+
+}
+
+#card {
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-delay: 1.5s;
+}
+
+#overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    background: #000;
+    opacity: 0.8;
+    filter: alpha(opacity=80);
+}
+#loading {
+    width: 50px;
+    height: 57px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -28px 0 0 -25px;
+}
+
+.favorite{
+  padding: 1% 2%;
+}
